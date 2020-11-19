@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapaActivity">
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:layout_above="@+id/mapa_infos"
+        android:id="@+id/google_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        mapbox:mapbox_cameraTargetLat="-2.62833"
+        mapbox:mapbox_cameraTargetLng="-56.73583"
+        mapbox:mapbox_cameraZoom="14"/>
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_marginBottom="32dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_above="@+id/mapa_infos"
+        android:src="@drawable/homemapa"
+        android:layout_width="62dp"
+        android:layout_height="62dp" />
+
+    <ImageView
+        android:layout_marginBottom="32dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_above="@+id/mapa_infos"
+        android:src="@drawable/homephone"
+        android:layout_width="62dp"
+        android:layout_height="62dp" />
+
+    <LinearLayout
+        android:id="@+id/mapa_infos"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:paddingVertical="32dp"
+        android:paddingHorizontal="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Você chegará em x minutos"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:text="Entregar para: nome"
+            android:textSize="16dp"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/mapa_cheguei"
+                android:layout_marginHorizontal="16dp"
+                android:paddingHorizontal="16dp"
+                android:textSize="18dp"
+                android:text="CHEGUEI"
+                android:textColor="#fff"
+                android:background="@drawable/borda_aberto"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/mapa_finalizar"
+                android:layout_marginHorizontal="16dp"
+                android:paddingHorizontal="16dp"
+                android:textSize="18dp"
+                android:text="FINALIZAR"
+                android:textColor="#fff"
+                android:background="@drawable/borda_gray"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mapa_entrega"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#fff"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:text="Entrega Concluída"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/finalcamera"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Adicionar Recibo"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/borda_gray"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="84dp" />
+
+            <TextView
+                android:text="Adicionar Recibo"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="32dp"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_marginHorizontal="16dp"
+                android:paddingHorizontal="16dp"
+                android:textSize="18dp"
+                android:text="REPORTAR"
+                android:textColor="#fff"
+                android:background="@drawable/borda_fechado"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/mapa_menu"
+                android:layout_marginHorizontal="16dp"
+                android:paddingHorizontal="16dp"
+                android:textSize="18dp"
+                android:text="MENU"
+                android:textColor="#fff"
+                android:background="@drawable/borda_aberto"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

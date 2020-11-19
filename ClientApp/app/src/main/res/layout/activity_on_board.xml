@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/SlidingPanel"
+    tools:context=".OnBoardActivity">
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:id="@+id/board_lay01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="32dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/testeeee"
+                android:layout_gravity="center"
+                android:src="@drawable/boardmap"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <TextView
+                android:gravity="center"
+                android:text="O shopping virtual da cidade"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginTop="48dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:gravity="center"
+                android:text="Nós tornamos simples encontrar o que você procura"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_marginTop="32dp"
+                android:id="@+id/board_bt1"
+                android:textSize="18dp"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:text="Próximo"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginBottom="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/stepa"
+            android:layout_width="120dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/b_pular1"
+            android:layout_marginTop="8dp"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:text="Pular"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/board_lay02"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="32dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/boardfast"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <TextView
+                android:gravity="center"
+                android:text="Entrega rápida onde estiver"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginTop="48dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:gravity="center"
+                android:text="Fornecemos serviço rápido com a melhor qualidade"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/board_bt2"
+                android:layout_marginTop="32dp"
+                android:textSize="18dp"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:text="Próximo"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginBottom="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/stepb"
+            android:layout_width="120dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/b_pular2"
+            android:layout_marginTop="8dp"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:text="Pular"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/board_lay03"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="32dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/boardcripto"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <TextView
+                android:gravity="center"
+                android:text="Ganhe descontos usando criptos"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginTop="48dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:gravity="center"
+                android:text="Em cada compra feita usando criptomoedas, você ganha descontos de 10% no pedido!"
+                android:textColor="#000"
+                android:textSize="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/board_bt3"
+                android:layout_marginTop="32dp"
+                android:textSize="18dp"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:text="Próximo"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginBottom="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/stepc"
+            android:layout_width="120dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/b_cripto"
+            android:layout_marginTop="8dp"
+            android:textSize="15dp"
+            android:textColor="#00f"
+            android:textStyle="bold"
+            android:text="O que são criptomoedas?"
+            android:layout_marginLeft="32dp"
+            android:layout_marginBottom="88dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/b_pular3"
+            android:layout_marginTop="8dp"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:text="Pular"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/board_lay04"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_above="@id/board_out"
+            android:layout_marginHorizontal="32dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/boardfood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingHorizontal="32dp"
+            android:background="@drawable/button"
+            android:paddingVertical="24dp"
+            android:orientation="vertical"
+            android:id="@+id/board_out"
+            android:layout_marginBottom="-8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Boas Compras!"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="8dp"
+                android:text="Descubra as melhores opções de Parintins"
+                android:textColor="#fff"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/board_bt4"
+                android:layout_marginBottom="40dp"
+                android:text="Vamos Começar"
+                android:textSize="18dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/borda_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:background="@drawable/borda_edit"
+                android:layout_width="match_parent"
+                android:layout_height="8dp">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

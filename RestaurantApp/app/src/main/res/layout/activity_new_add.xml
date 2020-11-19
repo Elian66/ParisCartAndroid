@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.newcart.pariscartrestaurant.AddNewFood">
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:text="Adicionar Acompanhamento Extra"
+            android:textSize="19dp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/edtNameADD"
+            android:hint="Nome do Acompanhamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#000"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="17sp"
+            android:inputType="text"
+            app:met_floatingLabel="highlight"
+            app:met_singleLineEllipsis="true"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtPriceADD"
+            android:hint="Defina o preço do prato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#000"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="17sp"
+            android:inputType="number"
+            app:met_floatingLabel="highlight"
+            app:met_singleLineEllipsis="true"
+            />
+
+
+        <Button
+            android:id="@+id/edtBtnADD"
+            android:layout_marginHorizontal="8dp"
+            android:textColor="#fff"
+            android:text="Adicionar acompanhamento extra"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

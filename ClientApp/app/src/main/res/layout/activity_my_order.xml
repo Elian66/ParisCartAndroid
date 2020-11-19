@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="32dp"
+    android:layout_height="match_parent"
+    tools:context=".MyOrderActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:paddingVertical="16dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/myor_back"
+                    android:tint="@color/colorPrimary"
+                    android:layout_marginHorizontal="24dp"
+                    android:src="@drawable/ic_chevron_left_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/myor_id"
+                android:text="Pedido #111"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/myor_lay04"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/cancelado"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="64dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:text="Pedido Cancelado"
+                    android:textColor="#d00"
+                    android:fontFamily="sans-serif"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="36dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/myor_lay03"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/myoraprovado"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="64dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:text="Pedido Finalizado"
+                    android:textColor="#0a0"
+                    android:fontFamily="sans-serif"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="36dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <androidx.cardview.widget.CardView
+                    app:cardElevation="2dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardUseCompatPadding="true"
+                    android:layout_marginHorizontal="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_marginHorizontal="24dp"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="24dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Avaliar pedido"
+                            android:textColor="#000"
+                            android:fontFamily="sans-serif"
+                            android:textSize="18dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="16dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <RatingBar
+                            android:layout_marginTop="8dp"
+                            android:numStars="5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/myor_lay01"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginTop="32dp"
+                    android:layout_marginHorizontal="32dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_marginHorizontal="20dp"
+                        android:gravity="center_vertical"
+                        android:weightSum="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/myor_ball01"
+                            android:layout_weight="0.2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:background="@color/cinza"
+                            android:orientation="horizontal"
+                            android:id="@+id/myor_lin01"
+                            android:layout_marginHorizontal="8dp"
+                            android:layout_weight="0.7"
+                            android:layout_width="0dp"
+                            android:layout_height="2dp">
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/myor_ball02"
+                            android:layout_weight="0.2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:background="@color/cinza"
+                            android:orientation="horizontal"
+                            android:id="@+id/myor_lin02"
+                            android:layout_marginHorizontal="8dp"
+                            android:layout_weight="0.7"
+                            android:layout_width="0dp"
+                            android:layout_height="2dp">
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/myor_ball03"
+                            android:layout_weight="0.2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="8dp"
+                        android:weightSum="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Solicitado"
+                            android:gravity="center"
+                            android:textSize="12sp"
+                            android:textColor="#000"
+                            android:layout_weight="0.4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:layout_weight="0.4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:text="Confirmado"
+                            android:gravity="center"
+                            android:textSize="12sp"
+                            android:textColor="#000"
+                            android:layout_weight="0.4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:layout_weight="0.4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:text="Preparando"
+                            android:gravity="center"
+                            android:textSize="12sp"
+                            android:textColor="#000"
+                            android:layout_weight="0.4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="48dp"
+                    android:layout_marginHorizontal="32dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/myor_stimg"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp" />
+
+                    <TextView
+                        android:id="@+id/myor_sttxt"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:fontFamily="sans-serif"
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_above="@id/myor_detalhes"
+        android:visibility="visible"
+        android:id="@+id/myor_lay02"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:layout_marginTop="80dp"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:id="@+id/google_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <androidx.cardview.widget.CardView
+            app:cardElevation="2dp"
+            app:cardCornerRadius="20dp"
+            app:cardUseCompatPadding="true"
+            android:layout_marginBottom="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginVertical="8dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/rider_mins"
+                    android:textStyle="bold"
+                    android:text="Seu pedido chega em x minutos"
+                    android:textColor="#000"
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/rider_name"
+                    android:text="Entregador: Eric Clapton"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/rider_placa"
+                    android:text="Placa: JMW 1234"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/myor_detalhes"
+        android:textAllCaps="true"
+        android:textSize="18dp"
+        android:text="Detalhes do Pedido"
+        android:layout_marginHorizontal="32dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/borda_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

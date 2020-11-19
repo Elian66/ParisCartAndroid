@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#eee"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PagamentoActivity">
+
+    <RelativeLayout
+        android:paddingVertical="16dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/pg_back"
+            android:tint="@color/colorPrimary"
+            android:layout_marginHorizontal="24dp"
+            android:src="@drawable/ic_chevron_left_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:tint="@color/colorPrimary"
+            android:layout_marginHorizontal="24dp"
+            android:src="@drawable/ic_shopping_cart_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Pagamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="32dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:weightSum="2"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/money_bill"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="32dp" />
+
+            <TextView
+                android:textColor="#000"
+                android:fontFamily="sans-serif"
+                android:textSize="20dp"
+                android:paddingHorizontal="16dp"
+                android:layout_gravity="center"
+                android:text="Dinheiro"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/pag_dinheiro"
+                android:src="@drawable/ic_radio_button_checked_orange_24dp"
+                android:layout_weight="0.3"
+                android:layout_width="0dp"
+                android:layout_height="32dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="32dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:weightSum="2"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/maquinacar"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="32dp" />
+
+            <TextView
+                android:textColor="#000"
+                android:fontFamily="sans-serif"
+                android:textSize="20dp"
+                android:paddingHorizontal="16dp"
+                android:layout_gravity="center"
+                android:text="Máquina de Cartão"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/pag_cartao"
+                android:src="@drawable/ic_radio_button_checked_gray_24dp"
+                android:layout_weight="0.3"
+                android:layout_width="0dp"
+                android:layout_height="32dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="32dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:weightSum="2"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/caixatem"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="32dp" />
+
+            <TextView
+                android:textColor="#000"
+                android:fontFamily="sans-serif"
+                android:textSize="20dp"
+                android:paddingHorizontal="16dp"
+                android:layout_gravity="center"
+                android:text="Cartão Virtual Caixa"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/pag_caixa"
+                android:src="@drawable/ic_radio_button_checked_gray_24dp"
+                android:layout_weight="0.3"
+                android:layout_width="0dp"
+                android:layout_height="32dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="32dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:weightSum="2"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/picpay"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="32dp" />
+
+            <TextView
+                android:textColor="#000"
+                android:fontFamily="sans-serif"
+                android:textSize="20dp"
+                android:paddingHorizontal="16dp"
+                android:layout_gravity="center"
+                android:text="PicPay"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/pag_picpay"
+                android:src="@drawable/ic_radio_button_checked_gray_24dp"
+                android:layout_weight="0.3"
+                android:layout_width="0dp"
+                android:layout_height="32dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="32dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:weightSum="2"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/bitc"
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="32dp" />
+
+            <TextView
+                android:textColor="#000"
+                android:fontFamily="sans-serif"
+                android:textSize="20dp"
+                android:paddingHorizontal="16dp"
+                android:layout_gravity="center"
+                android:text="Criptomoeda (10%)"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/pag_cripto"
+                android:src="@drawable/ic_radio_button_checked_gray_24dp"
+                android:layout_weight="0.3"
+                android:layout_width="0dp"
+                android:layout_height="32dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

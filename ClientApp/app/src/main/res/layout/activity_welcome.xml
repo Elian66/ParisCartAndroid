@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.newcart.newpariscart.WelcomeActivity">
+
+    <ImageView
+        android:id="@+id/etapaopt"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_netapaone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/imgotp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="48dp"
+        android:layout_below="@id/etapaopt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/otpione" />
+
+        <ImageView
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_otptone" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_below="@id/imgotp"
+        android:layout_marginHorizontal="32dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="16dp"
+        app:cardUseCompatPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:visibility="visible"
+            android:paddingVertical="24dp"
+            android:paddingHorizontal="8dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginHorizontal="8dp"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <com.rilixtech.CountryCodePicker
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    app:ccp_defaultCode="55"
+                    android:id="@+id/login_ccp"
+                    android:layout_weight="0.6"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/login_number"
+                    android:layout_width="0dp"
+                    android:textSize="20dp"
+                    android:layout_weight="1.4"
+                    android:layout_height="50dp"
+                    android:hint="Seu número"
+                    android:inputType="phone"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_btncontinuar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:paddingVertical="24dp"
+            android:paddingHorizontal="8dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginHorizontal="32dp"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="56dp">
+
+                <EditText
+                    android:gravity="center"
+                    android:background="@drawable/borda_cinzaclaro"
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/login_otp1"
+                    android:layout_width="0dp"
+                    android:textSize="20dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent"
+                    android:inputType="phone"/>
+
+                <EditText
+                    android:gravity="center"
+                    android:background="@drawable/borda_cinzaclaro"
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/login_otp2"
+                    android:layout_width="0dp"
+                    android:textSize="20dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent"
+                    android:inputType="phone"/>
+
+                <EditText
+                    android:gravity="center"
+                    android:background="@drawable/borda_cinzaclaro"
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/login_otp3"
+                    android:layout_width="0dp"
+                    android:textSize="20dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent"
+                    android:inputType="phone"/>
+
+                <EditText
+                    android:gravity="center"
+                    android:background="@drawable/borda_cinzaclaro"
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/login_otp4"
+                    android:layout_width="0dp"
+                    android:textSize="20dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent"
+                    android:inputType="phone"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_btncontinuar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_marginBottom="32dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/login_termos"
+        android:textColor="#00f"
+        android:textSize="16dp"
+        android:text="Termos de Uso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.newcart.pariscartrestaurant.EditProfileActivity">
+
+
+    <TextView
+        android:layout_marginHorizontal="15dp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold|italic"
+        android:textSize="18dp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Atualizar Restaurante:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginHorizontal="15dp"
+        android:fontFamily="sans-serif"
+        android:textSize="18dp"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:text="Nome do Restaurante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/registerE_name"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"/>
+
+    <TextView
+        android:layout_marginHorizontal="15dp"
+        android:fontFamily="sans-serif"
+        android:textSize="18dp"
+        android:textColor="#000"
+        android:layout_marginTop="5dp"
+        android:text="Seu Endereço"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/registerE_pass"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"/>
+
+    <TextView
+        android:layout_marginHorizontal="15dp"
+        android:fontFamily="sans-serif"
+        android:textSize="18dp"
+        android:textColor="#000"
+        android:layout_marginTop="5dp"
+        android:text="Sua taxa de entrega (em R$)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/registerE_taxa"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_marginHorizontal="15dp"
+        android:fontFamily="sans-serif"
+        android:textSize="18dp"
+        android:textColor="#000"
+        android:layout_marginTop="5dp"
+        android:text="Atualizar Senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/registerE_senha"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"/>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:background="@color/colorPrimary"
+            android:id="@+id/btnSelectE"
+            android:textAllCaps="false"
+            android:text="Selecione uma Imagem"
+            android:textColor="@android:color/white"
+            android:layout_marginHorizontal="8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            app:cornerRadius="4dp"
+            />
+
+        <Button
+            android:background="@color/colorPrimary"
+            android:id="@+id/btnUploadE"
+            android:text="Atualizar Perfil"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cornerRadius="4dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

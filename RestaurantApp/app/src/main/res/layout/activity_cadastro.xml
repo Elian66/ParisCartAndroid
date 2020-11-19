@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.newcart.pariscartrestaurant.CadastroActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginHorizontal="15dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold|italic"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_marginTop="40dp"
+                android:text="Peça suas refeições sem sair de casa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="sans-serif"
+                android:textSize="15dp"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Aqui temos diversas opções de restaurantes e lanchonetes aguardando por você"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginHorizontal="15dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold|italic"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Fazer Cadastro:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginHorizontal="15dp"
+                android:fontFamily="sans-serif"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:text="Número de Telefone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <com.rilixtech.CountryCodePicker
+                    android:gravity="end"
+                    app:ccp_defaultCode="55"
+                    android:id="@+id/register_cccp"
+                    android:layout_weight="0.65"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_marginLeft="3dp"
+                    android:id="@+id/register_uf_number"
+                    android:nextFocusDown="@+id/sign_phone_number"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="match_parent"
+                    android:hint="92"
+                    android:maxLength="2"
+                    android:gravity="center"
+                    android:inputType="phone"/>
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/register_phone_number"
+                    android:layout_width="0dp"
+                    android:maxLength="9"
+                    android:layout_weight="0.9"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:hint="991234567"
+                    android:inputType="phone"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginHorizontal="15dp"
+                android:fontFamily="sans-serif"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:text="Nome de Restaurante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/register_name"
+                android:layout_marginHorizontal="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+
+            <TextView
+                android:layout_marginHorizontal="15dp"
+                android:fontFamily="sans-serif"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:text="Informe seu Endereço"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/register_pass"
+                android:layout_marginHorizontal="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+
+            <TextView
+                android:layout_marginHorizontal="15dp"
+                android:fontFamily="sans-serif"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:text="Crie uma Senha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/register_senha"
+                android:layout_marginHorizontal="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+
+            <TextView
+                android:layout_marginHorizontal="15dp"
+                android:fontFamily="sans-serif"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:text="Informe a Taxa de Entrega do Restaurante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/register_taxa"
+                android:layout_marginHorizontal="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+
+            <Button
+                android:layout_marginTop="15dp"
+                android:id="@+id/id_register_entrar"
+                android:textSize="16dp"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:text="Fazer Cadastro"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

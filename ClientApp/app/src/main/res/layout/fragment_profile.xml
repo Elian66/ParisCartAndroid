@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.newcart.newpariscart.ProfileFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginHorizontal="32dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_gravity="center"
+                android:textSize="24dp"
+                android:fontFamily="sans-serif"
+                android:text="Minha Conta"
+                android:textColor="#000"
+                android:layout_marginTop="32dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="20dp"
+                    android:elevation="4dp"
+                    android:layout_weight="1.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="16dp"
+                        android:id="@+id/prof_prof"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:textColor="#000"
+                                android:textSize="18dp"
+                                android:text="Nome do Usuário"
+                                android:id="@+id/profile_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <ImageView
+                                android:layout_marginLeft="8dp"
+                                android:src="@drawable/ic_create_black_24dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_marginTop="4dp"
+                            android:textSize="16dp"
+                            android:text="Endereço"
+                            android:id="@+id/profile_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/borda_green"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/profile_phone"
+                                android:text="0 pedidos"
+                                android:textColor="#fff"
+                                android:textSize="14sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+                    android:id="@+id/profile_img"
+                    android:src="#eee"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="#bbb"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.05dp">
+
+            </LinearLayout>
+
+            <TextView
+                android:text="Meus Pedidos"
+                android:fontFamily="sans-serif"
+                android:textSize="20dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Minhas Avaliações"
+                android:fontFamily="sans-serif"
+                android:textSize="20dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:background="#bbb"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.05dp">
+
+            </LinearLayout>
+
+            <TextView
+                android:text="Alterar Senha"
+                android:fontFamily="sans-serif"
+                android:textSize="20dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Configurações"
+                android:fontFamily="sans-serif"
+                android:textSize="20dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/prof_ajuda"
+                android:text="Ajuda"
+                android:fontFamily="sans-serif"
+                android:textSize="20dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/prof_sug"
+                android:text="Sugerir Restaurante"
+                android:fontFamily="sans-serif"
+                android:textSize="20dp"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Contato"
+                    android:fontFamily="sans-serif"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/prof_sair"
+                    android:gravity="right"
+                    android:text="SAIR"
+                    android:fontFamily="sans-serif"
+                    android:textSize="20dp"
+                    android:textColor="#999"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <TextView
+                android:gravity="right"
+                android:layout_marginTop="20dp"
+                android:textSize="16dp"
+                android:text="ParisCart v4.0.1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

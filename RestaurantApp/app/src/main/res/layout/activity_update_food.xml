@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.newcart.pariscartrestaurant.UpdateFoodActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:text="Atualizar Prato"
+                android:textSize="19dp"
+                android:textColor="#000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_marginTop="10dp"
+                android:id="@+id/AedtName"
+                android:hint="Nome do Prato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#000"
+                android:text=""
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:inputType="text"
+                app:met_floatingLabel="highlight"
+                app:met_singleLineEllipsis="true"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/AedtDescription"
+                android:hint="Escreva os ingredientes do prato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#000"
+                android:text=""
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:inputType="textMultiLine"
+                app:met_floatingLabel="highlight"
+                app:met_singleLineEllipsis="true"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/AedtPrice"
+                android:hint="Defina o preço do prato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#000"
+                android:text=""
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:inputType="number"
+                app:met_floatingLabel="highlight"
+                app:met_singleLineEllipsis="true"
+                />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/AedtDiscount"
+                android:hint="Defina a Categoria. Ex: Pizzas, Sanduíches..."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#000"
+                android:text=""
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:inputType="text"
+                app:met_floatingLabel="highlight"
+                app:met_singleLineEllipsis="true"
+                />
+
+            <Button
+                android:id="@+id/acomp_extraNew"
+                android:layout_marginHorizontal="8dp"
+                android:textColor="#fff"
+                android:text="Atualizar acompanhamento extra"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:background="@color/colorPrimary"
+                    android:id="@+id/AbtnSelect"
+                    android:textAllCaps="false"
+                    android:text="Atualizar Imagem"
+                    android:textColor="@android:color/white"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp"
+                    app:cornerRadius="4dp"
+                    />
+
+                <Button
+                    android:background="@color/colorPrimary"
+                    android:id="@+id/AbtnUpload"
+                    android:text="Atualizar Prato"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cornerRadius="4dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

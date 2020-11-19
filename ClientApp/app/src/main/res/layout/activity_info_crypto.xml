@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoCryptoActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <ImageView
+                android:id="@+id/incry_back"
+                android:tint="#fff"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_chevron_left_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:text="O que são criptomoedas?"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/boardcripto"
+                android:layout_width="180dp"
+                android:layout_height="120dp" />
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:text="Criptomoedas são moedas virtuais. Elas utilizam a criptografia e a tecnologia de blockchain para garantir o funcionamento descentralizado de negociações pela internet."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:text="Possuem a mesma função de comprar mercadorias e serviços, assim como moedas que você conhece como o real e o dólar. Mas por que usar essas moedas?"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:text="Anti Inflação e Moeda Descentralizada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_marginTop="8dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:src="@drawable/bitreal"
+                android:layout_width="180dp"
+                android:layout_height="120dp" />
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:text="@string/crip01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:text="@string/crip02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:text="Praticidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_marginTop="8dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:src="@drawable/bitpayment"
+                android:layout_width="180dp"
+                android:layout_height="120dp" />
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:text="@string/crip03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:text="Segurança"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_marginTop="8dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:src="@drawable/bitpix"
+                android:layout_width="180dp"
+                android:layout_height="120dp" />
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:text="@string/crip04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:text="@string/crip05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:text="@string/crip06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:text="@string/crip07"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:gravity="right"
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:text="- Equipe Local Platze"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

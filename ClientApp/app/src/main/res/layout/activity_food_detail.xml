@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.newcart.newpariscart.FoodDetailActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="220dp">
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:id="@+id/fd_image"
+                    android:src="@drawable/bg_resta"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/fdetail_back"
+                    android:tint="#fff"
+                    android:layout_marginHorizontal="24dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_chevron_left_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                app:cardElevation="4dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="-24dp"
+                android:layout_marginHorizontal="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_marginVertical="16dp"
+                    android:layout_marginHorizontal="24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                        android:id="@+id/number_button"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="130dp"
+                        android:layout_height="60dp"
+                        app:backGroundColor="@color/colorPrimary"
+                        app:finalNumber="20"
+                        app:textColor="#fff"
+                        app:initialNumber="1"
+                        app:textSize="8sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="16dp"
+                        />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/fd_name"
+                            android:fontFamily="sans-serif"
+                            android:layout_marginTop="10dp"
+                            android:textSize="24dp"
+                            android:textColor="#000"
+                            android:text="Nome do Prato"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/fd_price"
+                            android:fontFamily="sans-serif"
+                            android:layout_marginTop="8dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="19dp"
+                            android:text="R$20,00"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/fd_ing"
+                            android:fontFamily="sans-serif"
+                            android:layout_marginTop="4dp"
+                            android:textSize="17dp"
+                            android:text="Ingredientes"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content" />
+
+                        <RatingBar
+                            android:layout_marginTop="8dp"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:numStars="5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="16dp"
+                android:background="#ddd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="16dp"
+                    android:paddingVertical="10dp"
+                    android:textColor="#000"
+                    android:layout_marginHorizontal="32dp"
+                    android:text="Adicionais:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_adds"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/ic_comment_black_24dp"
+                    android:tint="#222"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:textColor="#222"
+                    android:layout_marginLeft="8dp"
+                    android:text="Adicionar observações do pedido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:id="@+id/fd_edit_comment"
+                android:layout_marginTop="5dp"
+                android:hint="Ex: Tirar salada, adicionais, ponto da carne, etc."
+                android:layout_marginHorizontal="32dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginHorizontal="32dp"
+                android:gravity="center"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <Button
+                    android:layout_marginRight="4dp"
+                    android:id="@+id/fd_btn"
+                    android:textSize="14dp"
+                    android:textColor="#fff"
+                    android:textAllCaps="false"
+                    android:text="Adicionar ao Carrinho"
+                    android:background="@drawable/borda_green"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/viewCartBtnFD"
+                    android:textSize="14dp"
+                    android:textColor="#fff"
+                    android:textAllCaps="false"
+                    android:text="Ir para o Carrinho"
+                    android:background="@drawable/borda_left"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

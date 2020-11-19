@@ -1,0 +1,114 @@
+{
+  "project_info": {
+    "project_number": "730377040200",
+    "firebase_url": "https://pariscart-e6df3.firebaseio.com",
+    "project_id": "pariscart-e6df3",
+    "storage_bucket": "pariscart-e6df3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730377040200:android:75e34c0d6ba637517d837d",
+        "android_client_info": {
+          "package_name": "com.localplatze.parisrider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "730377040200-kvu2df4fg8duf2qfhl025ta0je810gfp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIjl7d9rxnSNEyN-5Zql0nY7_urMun3fM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "730377040200-kvu2df4fg8duf2qfhl025ta0je810gfp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730377040200:android:9f97a75c7da95a2e7d837d",
+        "android_client_info": {
+          "package_name": "com.newcart.newpariscart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "730377040200-hm3sgjt782iftqk208v2oti7v18gin8s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.newcart.newpariscart",
+            "certificate_hash": "ad87215ce5f483f750ba67fcf1f2dd3ab1d87858"
+          }
+        },
+        {
+          "client_id": "730377040200-kvu2df4fg8duf2qfhl025ta0je810gfp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIjl7d9rxnSNEyN-5Zql0nY7_urMun3fM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "730377040200-kvu2df4fg8duf2qfhl025ta0je810gfp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730377040200:android:46dd89449ba8247f7d837d",
+        "android_client_info": {
+          "package_name": "com.newcart.pariscartrestaurant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "730377040200-v362oir0hvdd2vq9n1cmvsm5ibt7ea8k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.newcart.pariscartrestaurant",
+            "certificate_hash": "ad87215ce5f483f750ba67fcf1f2dd3ab1d87858"
+          }
+        },
+        {
+          "client_id": "730377040200-kvu2df4fg8duf2qfhl025ta0je810gfp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIjl7d9rxnSNEyN-5Zql0nY7_urMun3fM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "730377040200-kvu2df4fg8duf2qfhl025ta0je810gfp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ParisCart - Entregadores</string>
+    <string name="google_maps_key">AIzaSyB_qsP8AOP_P0MdlPz-48TDaJYjTP3vbjo</string>
+    <string name="access_token">pk.eyJ1IjoibG9jYWxwbGF0emUiLCJhIjoiY2tnZDY5amEwMDhoMTJzcDcwZDQ4eGJvNiJ9.WR18tSVkobJ1DCHhBdupsw</string>
+</resources>

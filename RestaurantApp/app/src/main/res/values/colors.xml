@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F45B22</color>
+    <color name="colorPrimaryDark">#F45B22</color>
+    <color name="colorAccent">#F45B22</color>
+
+    <color name="statusA">#d85c00</color>
+    <color name="statusB">#b99b00</color>
+    <color name="statusC">#bed800</color>
+    <color name="statusD">#0f0</color>
+
+    <color name="verde">#0a0</color>
+    <color name="vermelho">#f00</color>
+</resources>
